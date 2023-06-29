@@ -139,7 +139,7 @@ let obj2 = {
 function totalPopulation(object2) {
   let sum = 0;
   for ( attr in object2) {
-    sum += obj2[attr]
+    sum += object2[attr]
   }
   return sum
 }
