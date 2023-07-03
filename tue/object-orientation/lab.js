@@ -503,5 +503,6 @@ myFirstBoat.performMaintenance()
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
-myFirstBoat.checkSeaworthiness()
+
 //Code Here
+myFirstBoat.checkSeaworthiness()

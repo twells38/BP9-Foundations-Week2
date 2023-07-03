@@ -86,15 +86,15 @@ const catProducts = [
 ]
 
 // CODE HERE
-
-const applyPercentDiscount = (product, discount) => {
+// callback function
+const applyPercentDiscount = (product, discount) => { 
     product.displayPrice = product.basePrice * (1 - discount)
 }
 
 const applyFlatRateDiscount = (product, discount) => {
     product.displayPrice = product.basePrice - discount
 }
-
+// high order function
 const applyDiscounts = (arr, callback, discount) => {
     arr.forEach(product => {
         callback(product, discount)
@@ -116,7 +116,7 @@ const applyDiscounstByInventory = (arr, callback, amount, discount) => {
         }
     })
 }
-
+// invoke function
 applyDiscounts(dogProducts, applyPercentDiscount, .1)
 console.log(dogProducts)
 
